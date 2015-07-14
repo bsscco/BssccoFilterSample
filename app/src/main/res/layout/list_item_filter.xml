@@ -1,0 +1,56 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="7dp"
+    tools:context="bsscco.bssccofiltersample.FilterFragment"
+    >
+
+    <!--FilterPreviewImageButton-->
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleDimension="0dp"
+        >
+
+        <View
+            android:id="@+id/filter_preview_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:duplicateParentState="true"
+            />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--FilterPreviewImage-->
+        <ImageView
+            android:id="@+id/filter_preview_image"
+            android:layout_width="74dp"
+            android:layout_height="78dp"
+            android:layout_centerInParent="true"
+            android:duplicateParentState="true"
+            />
+
+        <TextView
+            android:id="@+id/filter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filter_preview_image"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:text="none"
+            android:textColor="#fafafa"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+</FrameLayout>
